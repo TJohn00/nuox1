@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "testadmin",
+    "database": "nuox",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

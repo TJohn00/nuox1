@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  pgdb:
+   image: postgres:alpine
+   container_name: pgdb
+   environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: testadmin
+      POSTGRES_DB: nuox
+   ports:
+   - 5432:5432
+   volumes: 
+      - ./pgdb:/var/lib/postgresql/data
+   restart: unless-stopped
+ 
